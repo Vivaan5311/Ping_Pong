@@ -1,0 +1,47 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <h3 class="btn btn-warning" id="h3" style="width:100%; margin-top:0px; height: 50px; text-align: left; font-size: 30px;">AI Ping Pong Game</h3>
+        <button class="btn btn-secondary" data-toggle = 'modal' data-target = '#myModal' style="float: right; border: 5px solid darkturquoise"> Instuctions </button>
+        <br>
+        <br>
+        <center>        
+        <button class="hi" style="font-size: 25px; background-color: rgb(48, 216, 48);">Play Game</button>
+        <button class="hi" style="font-size: 25px; background-color: rgb(72, 234, 245);"> Restart</button>
+        <br>
+        <br>
+        <div id="canvas">
+            
+        </div>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog" style="width: 90%;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4> Instructions </h4>
+              </div>
+              <div class="modal-body">
+                <p>The objective of the game is to not let the coomputer get 5 points. your job is to use your paddle to hit the green ball. If the ball touches the sides of the court, the computer gets one point. If the ball touches the top/bottom of the court, it will bounce off and keep playing. Move your mouse to control your paddle. As the game proggresses, the speed at which the ball is moving will increase. Also, if the ball crosses the speed of 13, and you miss, the computer wins. </p>
+              </div>
+             </div>
+            </div>
+           </div>
+        </center>
+        <div class="div" id="hi" style="background-color: aqua; text-align: center; ;"> Developed By Vivaan Gupta</div> 
+        <script src="main.js"></script>
+    </body>
+</html>
